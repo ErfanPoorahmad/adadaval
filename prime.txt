@@ -7,6 +7,17 @@ fun main() {
    {
        var flag=true
        for (i in 2 until x)
-    }
-  }
+    {
+        if (x % i == 0)
+        {
+            flag=false
+            break
+        }
+     }
+     if(flag==true)
+       println("$x")
+   
+   }
+ }
+   checkprime(100..999)
 }
